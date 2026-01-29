@@ -1,0 +1,250 @@
+/* general styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  
+}
+body {background-color:#8db8e2;
+       color: #030635;
+       min-height:100vh;
+       line-height: 1.8;
+ }
+/*navigation*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3e5d8b;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.topnav{
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;}
+  
+
+
+.topnav.a{ float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+.topnav a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+}
+
+.topnav a:hover {
+  color: #00bcd4 ;  
+  text-decoration: none;
+}
+.topnav a.active{ background-color: #3e5d8b;
+color:#ddd }
+
+.topnav .icon
+{ display: none;
+padding: 0 0 0 2px;
+z-index: 1001;
+}
+
+/*home page styling*/
+
+
+
+.hero {
+  min-height: 100vh;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+}
+
+.hero-content {
+  background-color: rgb(227, 226, 224);
+  color: #030635;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 8px;
+  justify-content: flex-end;
+}
+
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.hero-content h2
+{ margin-bottom: 20px;}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: irem;
+  margin-bottom: 20px;
+}
+
+
+/*Main Content*/
+    .main-content{
+     h1  {font-size: 2rem;
+          margin-top: 20px;
+          text-align: center; }
+    
+     
+    }
+     
+    .card {
+       display: flex;
+       margin: 10px 100px 100px 100px;
+       padding: 20px 20px;
+       gap: 1rem;
+       flex-wrap: wrap;
+       background: white;
+       color: #200401;
+       border-radius: 10px;
+       flex: 1 1 250px;
+       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  /* Log in form*/
+      .container {
+       max-width: 500px;
+       margin: auto;
+       background: #fff;
+       padding: 25px;
+       border-radius: 8px;
+       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  
+}
+
+    input[type=text], input[type=password],input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+.Registerbtn {
+  background-color:#030635;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+
+
+/* Footer */
+   .footer {
+        background-color:#3e5d8b;
+        padding: 0.6rem 0.4rem;
+        height: 3%;
+        margin: 0;
+          }
+
+    .footer-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+        }
+    .footer-icons a {
+        color:#00bcd4;
+        font-size: 1.3rem;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background-color:#fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        }
+
+    .footer-icons a:hover {
+        background-color: #fff;
+        transform: translateY(-3px);
+        }
+
+    .footer p {
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+/* Mobile Styles */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+   .hero {
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
