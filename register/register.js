@@ -1,0 +1,53 @@
+/*jshint esversion: 6 */
+
+const form = document.getElementById("signUpForm");
+const password = document.getElementById ("password");
+const confirmPassword = document.getElementById("confirmPassword");
+const passwordError = document.getElementById ("passwordError");
+const confirmError = document.getElementById ("confirmError");
+
+form.addEventListener ("submit",function (e) {
+  e.preventDefault();
+  let valid= true;
+
+  const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
+
+      if(!passwordPattern.test(password.value)){
+        passwordError.textContent= "Password must be 8+ chars, include uppercase, lowercase & number";
+        passwordError.style.visibility= "visible";
+        valid=false; 
+      } else {
+        passwordError.style.visibility="hidden";
+      }
+
+      if (password.value !== confirmPassword.value) {
+        confirmError.textContent ="Passwords do not match";
+        confirmError.style.visibility = "visible";
+        valid=false;
+      } else {
+        confirmError.style.visibility = "hidden";
+      }
+      
+      if(valid)
+      {
+        alert('Registartion form validated and submitted successfully!');
+        form.reset();
+      }
+});
+
+
+//modal//
+var modal = document.getElementById("popModal");
+var btn = document.getElementById("termsBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+};
+span.onclick = function() {
+  modal.style.display = "none";
+};
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};

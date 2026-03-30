@@ -1,0 +1,180 @@
+<!Doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JobNest</title>
+        <link rel="icon" href="../images/favicon-72x72.png"  type="image/x-icon" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+        <!-- Navigation-->
+             <nav class="navbar">
+                <div class="logo">JobNest</div>
+
+
+                <div class="topnav" id="myTopnav">
+
+
+                        <a href="../index.html"> Home</a>
+                        <a href="../about/about.html">About</a>
+                        <a href="register.html">Register</a>
+                        <a href="../contact/contact.html">Contact</a>
+                        <a href="javascript:void(0);" class="icon" onclick="displayHamberger()">
+                           <i class="fa fa-bars"></i>
+                        </a>
+                </div>
+            </nav>
+
+        <!--Main content-->  
+            <section class="main">
+                     <!--Registration-form-->
+                     <h1>Register to get started</h1>
+                        <div class="container">
+                            
+                            <h2>Create an Account</h2>
+                            <h3>Please fill up this form to create an account</h3>
+                            <hr>
+                            <form id="signUpForm">
+                                
+                            <label for="username"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="username" id="username" required>
+                                
+                            <label for="email"><b>Email</b></label>
+                            <input type="email" placeholder="Enter Email" name="email" id="email" required>
+                            
+                            <div class="input-group">
+                            <label for="password"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="password" id="password" required>
+                            <small id="passwordError"></small>
+                            </div>
+                            <div class="input-group">
+                            <label for="confirmPassword"><b> Confirm Password</b></label>
+                            <input type="password" placeholder="Confirm password" name="confirmPassword" id="confirmPassword" required>
+                            <small id="confirmError"></small>
+                            </div>
+                            
+                            <hr>
+                            
+                            <button type="submit" class="Registerbtn"> Register </button>
+                                      
+                        </form>
+                        <button id="termsBtn">Terms and Conditions</button>
+                        </div>
+                        
+                     <!--Registration-form-->
+            </section>
+            
+        <!-- Footer -->
+
+
+        <footer class="footer">
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/groups/1221633571194411" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/jobsireland.ie/?hl=en" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:info@jobnest.com" aria-label="Email">
+                <i class="fab fa-envelope"></i>
+                </a> 
+            </div>
+                <p> &copy; 2026 JobNest. All rights reserved</p>
+                
+        </footer>
+                <div id="popModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    
+                                       (JobNestIreland)  Last updated: 01 January 2026
+                                        <h2>Terms and Conditions</h2>
+                                        <h3>1. Introduction</h3>
+                                            These Terms and Conditions (“Terms”) govern your use of [Website Name] (“we”, “us”, “our”), a job search platform operated in Ireland. 
+                                            By accessing or using the website, you agree to be bound by these Terms.
+                                            If you do not agree, you must not use the website.
+                                        <h3>2. Eligibility</h3>
+                                            You must be at least 16 years old to use this website. By using the site, you confirm that you meet this requirement.
+                                        <h3>3. Services Provided</h3> 
+                                            We provide an online platform that allows:
+                                            Jobseekers to search and apply for jobs
+                                            Employers to post job vacancies
+                                            We do not guarantee employment, interviews, or job offers.
+                                        <h3>4. User Accounts</h3>
+                                            You may be required to create an account. You agree to:Provide accurate and up-to-date information,Keep your login details confidential
+                                            ,Notify us immediately of unauthorised use
+                                            We reserve the right to suspend or terminate accounts that breach these Terms.
+                                        <h3>5. User Responsibilities</h3>
+                                            You agree not to:
+                                            Post false, misleading, or unlawful content
+                                            Upload discriminatory, offensive, or abusive material
+                                            Use the site for spam, scams, or data scraping
+                                            Infringe intellectual property or data protection laws
+                                        <h3>6.Job Listings and Applications</h3>
+                                            Job listings are provided by third-party employers, and we do not verify their accuracy or legality.
+                                            You are responsible for evaluating job postings and employers before applying.
+                                            We are not responsible for the accuracy or legality of job postings or the actions of employers.
+                                            Any employment agreement is solely between the employer and jobseeker
+                                        <h3>7.Intellectual Property</h3>
+                                            All website content (excluding user-generated content) is owned by or licensed to us and protected by Irish and EU intellectual 
+                                            property laws.
+                                            You may not copy, reproduce, or distribute content without permission.
+                                        <h3>8.Limitation of Liability</h3>
+                                            To the fullest extent permitted under Irish law:
+                                            We are not liable for loss of income, opportunity, or data
+                                            We are not responsible for actions of employers or jobseekers
+                                            Use of the website is at your own risk
+                                        <h3>9.Termination</h3>
+                                            We may suspend or terminate access at any time if you breach these Terms or misuse the website.
+                                        <h3>10.Governing Law</h3>
+                                            These Terms are governed by the laws of Ireland, and Irish courts have exclusive jurisdiction.
+                                        <h3>11.Contact</h3>
+                                            For questions about these Terms, contact: jobnest@gmail.com
+                                            <br>
+
+                                       <h2>Privacy Policy</h2>
+                                            (GDPR & Ireland-Compliant) Last updated: [01-January-2026]
+
+                                        <h3>1. Who We Are</h3>
+                                               JobNest is a job search platform operating in Ireland. We are the Data Controller under the General Data Protection Regulation (GDPR).
+                                        <h3>2. Personal Data We Collect</h3>
+                                                Jobseekers:Name, email address,CVs, cover letters, employment history, Application activity
+                                                Employers:Company name, contact details, job postings
+                                                Automatically Collected:IP address,Browser type,Cookies and usage data
+                                        <h3>3. How We Use Your Data</h3>
+                                                We process personal data to:
+                                                Provide job search and recruitment service,Communicate with users
+                                                Improve our platform and user experience, Match jobseekers with employers
+                                                Improve website functionality, Communicate service updates, Comply with legal obligations
+                                        <h3>4. Basis for Processing</h3>
+                                                Under GDPR, we process data based on:Consent, Contractual necessity, Legitimate interests, Legal obligations
+                                        <h3>5. Sharing of Data</h3>
+                                                We may share data with:
+                                                Employers (for job applications),Service providers (hosting, analytics),Legal authorities where required,We never sell personal data.            
+                                        <h3>6. Data Storage & Security</h3>
+                                                Data is stored securely within the EU or GDPR-compliant locations
+                                                We use appropriate technical and organisational measures to protect data
+                                        <h3>7. Data Retention</h3>
+                                                We retain personal data only as long as necessary:
+                                                Accounts inactive for [e.g. 24 months] may be deleted
+                                                Users may request deletion at any time
+                                        <h3>8. Your GDPR Rights</h3>
+                                                You have the right to:Access your data, Correct inaccurate data, Request erasure (“right to be forgotten”)
+                                                Restrict or object to processing, Data portability, Withdraw consent.
+                                                Requests can be sent to: jobnest@gmail.com
+                                        <h3>9. Cookies</h3>
+                                                We use cookies for functionality and analytics. You can manage cookie preferences via your browser or cookie banner.
+                                        <h3>10. Complaints</h3> 
+                                                If you believe your data protection rights have been breached, you may contact:Data Protection Commission (Ireland)
+                                                www.dataprotection.ie
+                                        <h3>Changes to This Policy</h3>
+                                                We may update this Privacy Policy. Significant changes will be notified on the website.  
+                                </div>                 
+                </div>                         
+        <script src="../script.js"></script>
+        <script src="register.js"></script>
+    </body>
+</html>

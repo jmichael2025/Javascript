@@ -1,0 +1,89 @@
+<!Doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JobNest</title>
+        <link rel="icon" href="../images/favicon-72x72.png"  type="image/x-icon" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="../style.css">
+         
+    </head>
+
+    <body>
+        <!-- Navigation-->
+             <nav class="navbar">
+                <div class="logo">JobNest</div>
+                <div class="topnav" id="myTopnav">
+                        <a href="../index.html"> Home</a>
+                        <a href="../about/about.html">About</a>
+                        <a href="../register/register.html">Register</a>
+                        <a href="../contact/contact.html">Contact</a>
+                        <a href="javascript:void(0);" class="icon" onclick="displayHamberger()">
+                           <i class="fa fa-bars"></i>
+                        </a>
+                </div>
+            </nav>
+
+        <!--Main content-->  
+            <section class="main">
+                <h1>Contact Us</h1>
+                <div class="survey-container"> 
+                
+            
+                    <form id ="surveyForm" onsubmit="return submitSurvey()" >
+                    <h2>JobNest user Survey</h2>
+                    <h3>Please fill out the survey to help us improve our website:</h3>
+                     
+                    <select id="ddlStatus" class="survey-dropdown"></select> <br>
+                    <select id="ddlEmployment" class="survey-dropdown"></select> <br>
+                    <select id="ddlCareerLevel" class="survey-dropdown"></select> <br>
+                    <select id="ddlIndustry" class="survey-dropdown"></select> <br>
+                    <select id="ddlJobRoles" class="survey-dropdown"></select> <br>
+                    <select id="ddlReferralSource" class="survey-dropdown"></select> <br>
+                    <select id="ddlEaseOfUse" class="survey-dropdown"></select> <br>
+                    <select id="ddlJobRelevance" class="survey-dropdown"></select> <br>
+                    <select id="ddlOverallSatisfaction" class="survey-dropdown"></select> <br>
+                    
+                    <label for="comments" class="cmtheading">Any additional comments or suggestions?</label>
+                    <textarea id="comments" class="survey-textarea" name="comments" rows="4" cols="50" placeholder="Your comments here..."></textarea><br>
+                    <input type="submit" class="survey-submit-btn" value="Submit Survey">
+                     
+                    </form>
+                </div>
+                </section>
+        
+        <!-- Footer -->
+
+        <footer class="footer">
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/groups/1221633571194411" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/jobsireland.ie/?hl=en" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:info@jobnest.com" aria-label="Email">
+                <i class="fab fa-envelope"></i>
+                </a> 
+            </div>
+                <p> &copy; 2026 JobNest. All rights reserved</p>
+                
+        </footer>
+
+        <div id="popModalSuccess" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p><h2>Survey submitted successfully! Thank you for your feedback.
+                                    </h2>
+                                    <div id="formValues">
+                                    </div>
+                                </div>
+        </div>
+                            
+                            
+    <script src="../script.js"></script>   
+    <script src="contact.js"></script>
+    </body>
+</html>
