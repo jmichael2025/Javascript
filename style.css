@@ -122,6 +122,21 @@ body
     flex: 1 1 250px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
+
+  /*joblisting */
+  .main{
+    margin :50px;
+    border:10px ;
+    padding : 10px;
+  }
+  .joblisting{
+    margin :20px;
+    border:10px ;
+    padding : 10px;
+    background-color: #ffffff;
+    text-align: center;}
+    
+  
     
   /* Log in form*/
   .container {
