@@ -25,83 +25,16 @@
             </a>
         </div>
     </nav>
-
-    <!--Main content-->
     <section class="main">
-        <h1> Job Listing </h1>
-        <div class="joblisting">
-            <div class="jod-card">
-                <h2>Digital Marketing Specialist</h2>
-                <p><strong>Company:</strong> Celtic Marketing Group</p>
-                <p><strong>Location:</strong> Limerick, Ireland</p>
-                <p><strong>Summary:</strong> Create online campaigns and improve brand visibility.</p>
-
-                <button class="jobBtn" onclick="viewJob(
-                        'Digital Marketing Specialist',
-                        'Celtic Marketing Group',
-                        'Limerick, Ireland',
-                        '€40,000 - €50,000',
-                        'As a Digital Marketing Specialist, you will manage SEO, social media campaigns, email marketing, and online advertisements. You will analyse campaign performance, increase website traffic, and work closely with the creative team to improve the company’s digital presence.'
-                    )">
-                    View Job
-                </button>
-            </div>
-
-            <div class="job-card">
-                <h2>Advertising Coordinator</h2>
-                <p><strong>Company:</strong> Emerald Media Agency</p>
-                <p><strong>Location:</strong> Dublin, Ireland</p>
-                <p><strong>Summary:</strong> Support advertising campaigns across different media channels.</p>
-
-                <button class="jobBtn" onclick="viewJob(
-        'Advertising Coordinator',
-        'Emerald Media Agency',
-        'Dublin, Ireland',
-        '€38,000 - €48,000',
-        'The Advertising Coordinator will assist in planning, organising, and monitoring advertising campaigns. The role involves working with clients, designers, and marketing teams to deliver successful print, digital, and social media advertisements.'
-    )">
-                    View Job
-                </button>
-            </div>
-
-
-            <div class="job-card">
-                <h2>Social Media Manager</h2>
-                <p><strong>Company:</strong> Atlantic Creative Studios</p>
-                <p><strong>Location:</strong> Galway, Ireland</p>
-                <p><strong>Summary:</strong> Manage social platforms and create engaging content.</p>
-
-                <button class="jobBtn" onclick="viewJob(
-        'Social Media Manager',
-        'Atlantic Creative Studios',
-        'Galway, Ireland',
-        '€42,000 - €55,000',
-        'The Social Media Manager will develop content strategies, schedule posts, engage with online communities, and track social media performance. The ideal candidate will have strong communication skills and knowledge of current online trends.'
-    )">
-                    View Job
-                </button>
-            </div>
-
-
-            <div class="job-card">
-                <h2>Brand & Communications Executive</h2>
-                <p><strong>Company:</strong> Green Isle Brands</p>
-                <p><strong>Location:</strong> Cork, Ireland</p>
-                <p><strong>Summary:</strong> Build brand identity and manage company communications.</p>
-
-                <button class="jobBtn "onclick="viewJob(
-        'Brand & Communications Executive',
-        'Green Isle Brands',
-        'Cork, Ireland',
-        '€45,000 - €58,000',
-        'The Brand & Communications Executive will create communication plans, maintain brand consistency, prepare promotional materials, and coordinate with media partners. This role requires excellent writing and organisational skills.'
-    )">
-                    View Job
-                </button>
-            </div>
-
+        <h1> Job Listings</h1>
+        <div class="joblisting" id="jobsContainer">
         </div>
+    <div id="jobDetails" class="details">
+        
+    
+    </div>
     </section>
+
 
     <!-- Footer -->
 
@@ -120,7 +53,14 @@
         <p> &copy; 2026 JobNest. All rights reserved</p>
 
     </footer>
-    <script src="script.js"></script>
+<div id="popModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    test....
+                                     </div>                 
+                </div>                         
+
+    <script src="../script.js"></script>
     <script src="jobs.js"></script>
 </body>
 
