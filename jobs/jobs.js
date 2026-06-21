@@ -7,9 +7,9 @@ function loadJobs() {
 
             const container = document.getElementById("jobsContainer");
 
-        jobs.forEach(job => {
-            container.innerHTML +=
-            `<div class="job-card">
+            jobs.forEach(job => {
+                container.innerHTML +=
+                    `<div class="job-card">
                 <h2>${job.title}</h2>
 
                 <p><strong>Company:</strong> ${job.company}</p>
@@ -19,18 +19,12 @@ function loadJobs() {
                 
                 <p><strong>Summary:</strong> ${job.summary}</p>
 
-                <button class="jobBtn" id="jobBtn"
-                    onclick="viewJob(
-                    '${job.title}',
-                                '${job.company}',
-                                '${job.location}',
-                                '${job.salary}',
-                                \`${job.description}\`
-                            )">
-                            View Job
-                        </button>
+                <button class="jobBtn"
+    onclick="location.href='jobDetails.html?id=${job.id}'">
+    View Job
+</button>
                     </div>`
-                ;
+                    ;
             });
 
         })
@@ -39,21 +33,6 @@ function loadJobs() {
         });
 }
 
-            
 
-function viewJob(title, company, location, salary, description) {
-
-    document.getElementById("jobDetails").style.display = "block";
-
-    document.getElementById("jobTitle").textContent = title;
-    document.getElementById("company").textContent = company;
-    document.getElementById("location").textContent = location;
-    document.getElementById("salary").textContent = salary;
-    document.getElementById("description").textContent = description;
-
-    document.getElementById("jobDetails").scrollIntoView({
-        behavior: "smooth"
-    });
-        }
 
 

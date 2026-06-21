@@ -1,5 +1,6 @@
 [
     {
+        "id":1,
         "title": "Digital Marketing Specialist",
         "company": "Celtic Marketing Group",
         "location": "Limerick, Ireland",
@@ -9,6 +10,7 @@
     },
 
     {
+        "id":2,
         "title": "Advertising Coordinator",
         "company": "Emerald Media Agency",
         "location": "Dublin, Ireland",
@@ -18,6 +20,7 @@
     },
 
     {
+        "id":3,
         "title": "Social Media Manager",
         "company": "Atlantic Creative Studios",
         "location": "Galway, Ireland",
@@ -27,6 +30,7 @@
     },
 
     {
+        "id":4,
         "title": "Brand & Communications Executive",
         "company": "Green Isle Brands",
         "location": "Cork, Ireland",
