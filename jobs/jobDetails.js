@@ -1,8 +1,8 @@
-// Get the id from the URL
+/* jshint esversion: 6 */
 const params = new URLSearchParams(window.location.search);
 const jobId = params.get("id");
 
-// Load the jobs JSON
+
 fetch("jobs.json")
     .then(response => response.json())
     .then(jobs => {

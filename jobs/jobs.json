@@ -1,6 +1,6 @@
 [
     {
-        "id":1,
+        "id": 1,
         "title": "Digital Marketing Specialist",
         "company": "Celtic Marketing Group",
         "location": "Limerick, Ireland",
@@ -8,9 +8,8 @@
         "summary": "Create online campaigns and improve brand visibility.",
         "description": "As a Digital Marketing Specialist, you will be responsible for planning, developing and managing online marketing campaigns. You will manage SEO, social media, email marketing, and online advertising to improve the company's digital presence."
     },
-
     {
-        "id":2,
+        "id": 2,
         "title": "Advertising Coordinator",
         "company": "Emerald Media Agency",
         "location": "Dublin, Ireland",
@@ -18,9 +17,8 @@
         "summary": "Support advertising campaigns across different media channels.",
         "description": "The Advertising Coordinator will assist in planning, organising, and monitoring advertising campaigns. The role involves working with clients, designers, and marketing teams to deliver successful print, digital, and social media advertisements."
     },
-
     {
-        "id":3,
+        "id": 3,
         "title": "Social Media Manager",
         "company": "Atlantic Creative Studios",
         "location": "Galway, Ireland",
@@ -28,9 +26,8 @@
         "summary": "Manage social platforms and create engaging content.",
         "description": "The Social Media Manager will develop content strategies, schedule posts, engage with online communities, and track social media performance. The ideal candidate will have strong communication skills and knowledge of current online trends."
     },
-
     {
-        "id":4,
+        "id": 4,
         "title": "Brand & Communications Executive",
         "company": "Green Isle Brands",
         "location": "Cork, Ireland",

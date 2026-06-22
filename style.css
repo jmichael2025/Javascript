@@ -156,12 +156,17 @@ h1 {
   flex-wrap: wrap;
 }
 
-.button-container button {
+.job-detailsBtn {
+  display: inline-block;
   width: 180px;
   padding: 12px;
-  border: none;
+  text-align: center;
+  text-decoration: none;
   border-radius: 6px;
   cursor: pointer;
+  background-color: #3e5d8b;
+  color: white;
+
 }
 
 /* Log in form*/
